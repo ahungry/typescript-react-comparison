@@ -44,8 +44,8 @@ it doesn't do type checking.  Likewise with swc.  This may be fine for
 a faster build/bundle step, if there is a different tsc type checking
 step that occurs (likely as tests run or prior to them running).
 
-crat and craco-swc seem to suffer from using babel or webpack or w/e
-they still use under the hood, while fuse-box avoids this.
+crat and craco-swc seem to suffer from using babel and webpack
+under the hood, while fuse-box avoids this.
 
 swc is supposed to be much faster than typescript (because it's
 written in Rust?) - but I think it's most likely because they don't
