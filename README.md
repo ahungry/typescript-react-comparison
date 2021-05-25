@@ -13,7 +13,7 @@ both the basic CRA app, as well as a very file-heavy build with many
 includes/type checks.
 
 ## Notes
-crat is the only one that does type checking - fusebox is fast because
+crat is the only one that does type checking - fuse-box is fast because
 it doesn't do type checking.  Likewise with swc.  This may be fine for
 a faster build/bundle step, if there is a different tsc type checking
 step that occurs.
@@ -39,11 +39,11 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 # Edit package.json script sections from "react-scripts" to "craco"
 ```
 
-## fuse-box-v4
+## fuse-box
 
 ```sh
-git clone git@github.com:fuse-box/react-example.git fuse-box-v4
-cd fuse-box-v4
+git clone git@github.com:fuse-box/react-example.git fuse-box
+cd fuse-box
 yarn
 ```
 
@@ -54,7 +54,7 @@ yarn
 ### crat
 341M node_modules
 
-### fuse-box-v4
+### fuse-box
 224M node_modules
 
 ### craco-swc
@@ -65,7 +65,7 @@ yarn
 27.703 seconds /
 28.501 seconds (500 chain)
 
-### fuse-box-v4
+### fuse-box
 5.8 seconds /
 10.339 seconds (500 chain)
 
@@ -78,7 +78,7 @@ yarn
 572K /
 812K (500 chain)
 
-### fuse-box-v4
+### fuse-box
 228K /
 436K (500 chain)
 
