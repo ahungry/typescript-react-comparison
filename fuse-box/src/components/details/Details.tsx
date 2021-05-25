@@ -12,7 +12,7 @@ export function Details() {
       </div>
 
       <div className="try-updating">
-        Try changing any of the components, You will get an isntant update
+        Try changing any of the components, You will get an instant update
         without a page refresh
       </div>
 
