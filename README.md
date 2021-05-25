@@ -19,13 +19,22 @@ npx create-react-app crat --template typescript
 # Benchmarks
 
 ## Disk usage
-
 ### CRAT
-
 341M node_modules
 
-## Build time (for Hello World)
+### Fusebox
+168M node_modules
 
+## Build time (for spinning react logo page from CRAT)
 ### CRAT
-
 27.703 seconds
+
+### Fusebox
+41.109 seconds
+
+## Build sizes
+### CRAT
+572K
+
+### Fusebox
+272K
