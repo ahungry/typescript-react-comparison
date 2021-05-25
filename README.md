@@ -63,28 +63,34 @@ yarn
 ## Build time (for spinning react logo page from crat, or same with 500 deep import chain)
 ### crat
 27.703 seconds /
-28.501 seconds (500 chain)
+28.501 seconds (500 chain) /
+104.36 seconds (500 chain repeated 3 times) /
 
 ### fuse-box
 5.8 seconds /
-10.339 seconds (500 chain)
+10.339 seconds (500 chain) /
+16.504 seconds (500 chain repeated 3 times) /
 
 ### craco-swc
 22.152 seconds /
-39.574 (500 chain)
+39.574 (500 chain) /
+65.48 (500 chain repeated 3 times) /
 
 ## Build sizes
 ### crat
 572K /
-812K (500 chain)
+812K (500 chain) /
+1.3M (500 chain repeated 3 times) /
 
 ### fuse-box
 228K /
-436K (500 chain)
+436K (500 chain) /
+816K (500 chain repeated 3 times) /
 
 ### craco-swc
 568K /
-824K (500 chain)
+824K (500 chain) /
+1.3M (500 chain repeated 3 times) /
 
 # Notes
 
