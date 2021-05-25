@@ -1,5 +1,31 @@
 # typescript-react-comparison
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [typescript-react-comparison](#typescript-react-comparison)
+    - [Notes/Findings](#notesfindings)
+- [Setup steps for each](#setup-steps-for-each)
+    - [crat](#crat)
+    - [craco-swc](#craco-swc)
+    - [fuse-box](#fuse-box)
+- [Benchmarks](#benchmarks)
+    - [Disk usage](#disk-usage)
+        - [crat](#crat-1)
+        - [fuse-box](#fuse-box-1)
+        - [craco-swc](#craco-swc-1)
+    - [Build time (for spinning react logo page from crat, or same with 500 deep import chain)](#build-time-for-spinning-react-logo-page-from-crat-or-same-with-500-deep-import-chain)
+        - [crat](#crat-2)
+        - [fuse-box](#fuse-box-2)
+        - [craco-swc](#craco-swc-2)
+    - [Build sizes](#build-sizes)
+        - [crat](#crat-3)
+        - [fuse-box](#fuse-box-3)
+        - [craco-swc](#craco-swc-3)
+- [Notes](#notes)
+
+<!-- markdown-toc end -->
+
 Comparison benchmarks for various SPA setups using typescript+react.
 
 Initially planning to test:
