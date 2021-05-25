@@ -42,6 +42,9 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.1.2",
+    "@swc/cli": "^0.1.42",
+    "@swc/core": "^1.2.58",
+    "@swc/helpers": "^0.2.12",
     "craco-swc": "^0.1.0"
   }
 }

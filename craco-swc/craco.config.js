@@ -13,7 +13,7 @@ module.exports = {
               syntax: 'typescript',
               tsx: true,
               dynamicImport: true,
-              exportDefaultFrom: true,
+              // exportDefaultFrom: true,
             },
           },
         },

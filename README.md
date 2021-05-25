@@ -4,7 +4,7 @@ Comparison benchmarks for various SPA setups using typescript+react.
 
 Initially planning to test:
 
-- Create React App (Typescript) - CRAT
+- Create React App (Typescript) - crat
 - fusebox
 - craco-swc
 
@@ -13,13 +13,13 @@ both the basic CRA app, as well as a very file-heavy build with many
 includes/type checks.
 
 ## Notes
-CRAT is the only one that does type checking - fusebox is fast because
+crat is the only one that does type checking - fusebox is fast because
 it doesn't do type checking.  Likewise with swc.  This may be fine for
 a faster build/bundle step, if there is a different tsc type checking
 step that occurs.
 
 # Setup steps for each
-## CRAT
+## crat
 
 ```sh
 npm i -g create-react-app
@@ -40,8 +40,9 @@ https://jwchang0206.medium.com/make-create-react-app-faster-with-rust-6c75ffa8fd
 npm i -g create-react-app@3.3.0
 create-react-app craco-swc --template typescript
 cd craco-swc
-yarn add -D @craco/craco craco-swc
-cp ../craco.config.js ./ # Obtained from medium post
+yarn add -D @craco/craco craco-swc @swc/core @swc/cli @swc/helpers
+cp ../craco.config.js ./ # Obtained from medium post, minor adjustment required
+cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 # Edit package.json script sections from "react-scripts" to "craco"
 ```
 
@@ -56,18 +57,24 @@ cp ../craco.config.js ./ # Obtained from medium post
 168M node_modules
 
 ### craco-swc
-468M node_modules
+470M node_modules
 
-## Build time (for spinning react logo page from CRAT)
-### CRAT
+## Build time (for spinning react logo page from crat)
+### crat
 27.703 seconds
 
 ### fusebox
 41.109 seconds
 
+### craco-swc
+22.152 seconds
+
 ## Build sizes
-### CRAT
+### crat
 572K
 
 ### fusebox
 272K
+
+### craco-swc
+568K

@@ -1,0 +1,15 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "dynamicImport": false,
+      "decorators": false
+    },
+    "transform": null,
+    "target": "es5",
+    "loose": false,
+    "externalHelpers": false,
+    "keepClassNames": false
+  }
+}
