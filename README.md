@@ -61,28 +61,28 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 
 ## Build time (for spinning react logo page from crat, or same with 500 deep import chain)
 ### crat
-27.703 seconds
+27.703 seconds /
 28.501 seconds (500 chain)
 
 ### fusebox-crat
-41.109 seconds
+41.109 seconds /
 66.80 seconds (500 chain)
 
 ### craco-swc
-22.152 seconds
+22.152 seconds /
 39.574 (500 chain)
 
 ## Build sizes
 ### crat
-572K
+572K /
 812K (500 chain)
 
 ### fusebox-crat
-272K
+272K /
 432K (500 chain)
 
 ### craco-swc
-568K
+568K /
 824K (500 chain)
 
 # Notes
