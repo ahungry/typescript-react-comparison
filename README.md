@@ -12,11 +12,20 @@ Will track install steps, disk usage, and build time/performance for
 both the basic CRA app, as well as a very file-heavy build with many
 includes/type checks.
 
-## Notes
+## Notes/Findings
 crat is the only one that does type checking - fuse-box is fast because
 it doesn't do type checking.  Likewise with swc.  This may be fine for
 a faster build/bundle step, if there is a different tsc type checking
-step that occurs.
+step that occurs (likely as tests run or prior to them running).
+
+crat and craco-swc seem to suffer from using babel or webpack or w/e
+they still use under the hood, while fuse-box avoids this.
+
+swc is supposed to be much faster than typescript (because it's
+written in Rust?) - but I think it's most likely because they don't
+typecheck at all (the entire point of typescript).  If you didn't want
+type checks, maybe just write in JS to begin with?
+
 
 # Setup steps for each
 ## crat
