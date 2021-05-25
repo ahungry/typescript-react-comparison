@@ -89,7 +89,7 @@ yarn
 ### crat
 341M node_modules
 
-### fuse-box (run "ncu -u" to update package.json to latest first)
+### fuse-box (run "ncu -u" from npm-check-updates, to update package.json to latest first)
 130M node_modules
 
 ### craco-swc
