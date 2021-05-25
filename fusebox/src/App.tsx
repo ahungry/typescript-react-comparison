@@ -3,6 +3,8 @@
 import * as React from 'react';
 import * as logo from './logo.svg';
 
+import X from './xs/x1'
+
 import styled, {keyframes} from 'styled-components';
 
 var Center = styled.div`
@@ -45,6 +47,7 @@ class App extends React.Component {
     return (
       <Center>
         <Header>
+          <X />
           <Logo src={logo} alt="logo" />
           <p>
             Edit <code>src/App.tsx</code> and save to reload.

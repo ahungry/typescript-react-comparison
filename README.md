@@ -5,7 +5,7 @@ Comparison benchmarks for various SPA setups using typescript+react.
 Initially planning to test:
 
 - Create React App (Typescript) - crat
-- fusebox-crat
+- fusebox-crat (3 year outdated fusebox template)
 - craco-swc
 
 Will track install steps, disk usage, and build time/performance for
@@ -59,22 +59,40 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 ### craco-swc
 470M node_modules
 
-## Build time (for spinning react logo page from crat)
+## Build time (for spinning react logo page from crat, or same with 500 deep import chain)
 ### crat
 27.703 seconds
+28.501 seconds (500 chain)
 
 ### fusebox-crat
 41.109 seconds
+66.80 seconds (500 chain)
 
 ### craco-swc
 22.152 seconds
+39.574 (500 chain)
 
 ## Build sizes
 ### crat
 572K
+812K (500 chain)
 
 ### fusebox-crat
 272K
+432K (500 chain)
 
 ### craco-swc
 568K
+824K (500 chain)
+
+# Notes
+
+Script to generate a bunch of crap chained include files:
+
+```sh
+for f in {1..1000}; do echo -en "import * as React from 'react'\nimport X from './x$(echo $f+1|bc -q)'\nexport default class Y extends React.Component {render() { return <span><X />$f</span>; }}\n" > x$f.tsx; done
+```
+
+Modify the final file (x499.tsx) and ensure it stops the chained imports.
+
+Seems we must stop at 500 or we get "too much recursion" error in react.
