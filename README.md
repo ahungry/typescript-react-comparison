@@ -7,3 +7,25 @@ Initially planning to test:
 - Create React App (Typescript) - CRAT
 - Fusebox
 - CRACO + SWC
+
+# Setup steps for each
+
+## CRAT
+
+```sh
+npx create-react-app crat --template typescript
+```
+
+# Benchmarks
+
+## Disk usage
+
+### CRAT
+
+341M node_modules
+
+## Build time (for Hello World)
+
+### CRAT
+
+27.703 seconds
