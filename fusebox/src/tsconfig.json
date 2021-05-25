@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "module": "commonjs",
         "moduleResolution": "node",
         "isolatedModules": false,
@@ -13,6 +13,7 @@
         "removeComments": true,
         "importHelpers": true,
         "noLib": false,
+        "outDir": "build/",
         "noEmitHelpers": true,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true

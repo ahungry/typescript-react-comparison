@@ -5,8 +5,8 @@ Comparison benchmarks for various SPA setups using typescript+react.
 Initially planning to test:
 
 - Create React App (Typescript) - crat
-- fusebox-crat (3 year outdated fusebox template)
 - craco-swc
+- fuse-box (v4 - new as of 2021)
 
 Will track install steps, disk usage, and build time/performance for
 both the basic CRA app, as well as a very file-heavy build with many
@@ -26,13 +26,6 @@ npm i -g create-react-app
 create-react-app crat --template typescript
 ```
 
-## fusebox-crat
-
-```sh
-npm i -g fuse-box-create-react-app
-create-react-app fusebox --template fuse-box-react-scripts-ts
-```
-
 ## craco-swc
 https://jwchang0206.medium.com/make-create-react-app-faster-with-rust-6c75ffa8fdfd
 
@@ -46,6 +39,14 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 # Edit package.json script sections from "react-scripts" to "craco"
 ```
 
+## fuse-box-v4
+
+```sh
+git clone git@github.com:fuse-box/react-example.git fuse-box-v4
+cd fuse-box-v4
+yarn
+```
+
 
 # Benchmarks
 
@@ -53,8 +54,8 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 ### crat
 341M node_modules
 
-### fusebox-crat
-168M node_modules
+### fuse-box-v4
+224M node_modules
 
 ### craco-swc
 470M node_modules
@@ -64,9 +65,9 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 27.703 seconds /
 28.501 seconds (500 chain)
 
-### fusebox-crat
-41.109 seconds /
-66.80 seconds (500 chain)
+### fuse-box-v4
+5.8 seconds /
+10.339 seconds (500 chain)
 
 ### craco-swc
 22.152 seconds /
@@ -77,9 +78,9 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 572K /
 812K (500 chain)
 
-### fusebox-crat
-272K /
-432K (500 chain)
+### fuse-box-v4
+228K /
+436K (500 chain)
 
 ### craco-swc
 568K /
