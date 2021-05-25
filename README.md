@@ -5,7 +5,7 @@ Comparison benchmarks for various SPA setups using typescript+react.
 Initially planning to test:
 
 - Create React App (Typescript) - crat
-- fusebox
+- fusebox-crat
 - craco-swc
 
 Will track install steps, disk usage, and build time/performance for
@@ -26,7 +26,7 @@ npm i -g create-react-app
 create-react-app crat --template typescript
 ```
 
-## fusebox
+## fusebox-crat
 
 ```sh
 npm i -g fuse-box-create-react-app
@@ -53,7 +53,7 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 ### crat
 341M node_modules
 
-### fusebox
+### fusebox-crat
 168M node_modules
 
 ### craco-swc
@@ -63,7 +63,7 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 ### crat
 27.703 seconds
 
-### fusebox
+### fusebox-crat
 41.109 seconds
 
 ### craco-swc
@@ -73,7 +73,7 @@ cp ../.swcrc ./ # Obtained from swc.rs and adjusted
 ### crat
 572K
 
-### fusebox
+### fusebox-crat
 272K
 
 ### craco-swc
